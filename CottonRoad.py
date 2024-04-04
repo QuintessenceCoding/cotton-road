@@ -625,7 +625,7 @@ def main():
         }
 ]
     # Base URL of the GitHub repository where images are stored
-    base_github_url = "https://github.com/QuintessenceCoding/cotton-road/blob/main/images/"
+    base_github_url = "https://raw.githubusercontent.com/QuintessenceCoding/cotton-road/main/images/"
 
     # Generate photo paths for each person using the base GitHub URL
     for person in people:
