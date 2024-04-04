@@ -44,7 +44,7 @@ def main():
         },
         {
             "name": "Aniruddha", 
-            
+            "photo_path": "D:\code\LrnPyth\website\Class ke bache for trafficking\Aniruddha.jpg", 
             "details": "A2345923085", 
             "ordered": False,
             "organs": [
@@ -624,13 +624,18 @@ def main():
             ]
         }
 ]
-    # Base URL of the GitHub repository where images are stored
-    base_github_url = "https://raw.githubusercontent.com/QuintessenceCoding/cotton-road-images/main/images/"
 
-    # Generate photo paths for each person using the base GitHub URL
+                                                                                         #MADE BY ISHIKA VASHISHT
+
+    
+     # Path to folder containing images
+    image_folder_path = "D:/code/LrnPyth/website/images"
+
+    # Generate photo paths for each person
     for person in people:
         photo_name = person["name"].replace(" ", "_").lower() + ".jpg"  # Assuming images are in JPG format
-        person["photo_path"] = base_github_url + photo_name + "?v=1"
+        photo_path = os.path.join(image_folder_path, photo_name)
+        person["photo_path"] = photo_path
 
     # Search input
     search_input = st.text_input("Search by name:")
@@ -669,7 +674,7 @@ def main():
                             organ['ordered'] = True
         
         # Check if photo_path exists and display image if it does
-        if person['photo_path'] and st.image(person['photo_path'], caption=person['name'], use_column_width=True):
+        if os.path.exists(person['photo_path']):
             st.image(person['photo_path'], caption=person['name'], use_column_width=True)
         else:
             st.warning(f"No image found for {person['name']}")
@@ -678,3 +683,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    #MADE BY ISHIKA VASHISHT
