@@ -630,7 +630,7 @@ def main():
     # Generate photo paths for each person using the base GitHub URL
     for person in people:
         photo_name = person["name"].replace(" ", "_").lower() + ".jpg"  # Assuming images are in JPG format
-        person["photo_path"] = base_github_url + photo_name
+        person["photo_path"] = base_github_url + photo_name + "?v=1"
 
     # Search input
     search_input = st.text_input("Search by name:")
