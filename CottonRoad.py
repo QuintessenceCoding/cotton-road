@@ -634,7 +634,7 @@ def main():
     # Generate photo paths for each person
     for person in people:
         photo_name = person["name"].replace(" ", "_").lower() + ".jpg"  # Assuming images are in JPG format
-        photo_path = os.path.join(image_folder_path, photo_name)
+        photo_path = f"https://github.com/QuintessenceCoding/cotton-road/blob/main/images/{photo_name}?raw=true"
         person["photo_path"] = photo_path
 
     # Search input
