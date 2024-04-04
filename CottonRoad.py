@@ -629,7 +629,7 @@ def main():
 
     
      # Path to folder containing images
-    image_folder_path = "https://github.com/QuintessenceCoding/cotton-road/tree/main/images"
+    image_folder_path = ""https://raw.githubusercontent.com/QuintessenceCoding/cotton-road/main/images/"
 
     # Generate photo paths for each person
     for person in people:
