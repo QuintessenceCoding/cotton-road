@@ -44,7 +44,7 @@ def main():
         },
         {
             "name": "Aniruddha", 
-            "photo_path": "D:\code\LrnPyth\website\Class ke bache for trafficking\Aniruddha.jpg", 
+            "photo_path": "cotton-road/images/Aniruddha.jpg", 
             "details": "A2345923085", 
             "ordered": False,
             "organs": [
