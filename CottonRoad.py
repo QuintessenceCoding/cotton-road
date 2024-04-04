@@ -44,7 +44,7 @@ def main():
         },
         {
             "name": "Aniruddha", 
-            "photo_path": "cotton-road/images/Aniruddha.jpg", 
+            "photo_path": "https://raw.githubusercontent.com/QuintessenceCoding/cotton-road/main/images/Aniruddha.jpg", 
             "details": "A2345923085", 
             "ordered": False,
             "organs": [
