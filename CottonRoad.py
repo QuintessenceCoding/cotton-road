@@ -629,7 +629,7 @@ def main():
 
     
      # Path to folder containing images
-    image_folder_path = "D:/code/LrnPyth/website/images"
+    image_folder_path = "cotton-road/images"
 
     # Generate photo paths for each person
     for person in people:
